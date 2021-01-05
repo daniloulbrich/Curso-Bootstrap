@@ -4,6 +4,7 @@
   "description": "Nuestro primer proyecto",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Danilo Ulbrich",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/DaniloUlbrich/curso-web#readme"
+  "homepage": "https://bitbucket.org/DaniloUlbrich/curso-web#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
