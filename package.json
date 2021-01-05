@@ -1,0 +1,16 @@
+{
+  "name": "curso-web",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://DaniloUlbrich@bitbucket.org/DaniloUlbrich/curso-web.git"
+  },
+  "author": "Danilo Ulbrich",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/DaniloUlbrich/curso-web#readme"
+}
