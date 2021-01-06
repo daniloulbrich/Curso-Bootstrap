@@ -12,9 +12,41 @@
     <title>Hello, world!</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Precios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Terminos y Condiciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
     <div class="jumbotron">
         <h1 class="display-4">HOTELES</h1>
     </div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>       
+              </ol>
+        </nav>                 
+      </div>
     <div class="container">
         <div class="d-flex flex-wrap">
             <div class="col-sm-4">
@@ -39,16 +71,16 @@
                 <div>
                 <h5>Luma by Cavi</h5>
                 <p>El Lume by Kavia se encuentra en Cancún, a 300 metros de la estación de autobuses de Cancún y del Palacio de Gobierno de Cancún, posee una gran playa privada.</p>
-            </div>
-            <div>
+                </div>
+                <div>
                 <button type="button" class="btn btn-light btn-reserva">Reservar</button>
+                </div>
             </div>
-        </div>
             <div class="col-sm-4 card-hotel" d-flex flex-column justify-content-between>
                 <div>
                 <h5>Garza Blanca All-Inclusive</h5>
                 <p>El Garza Blanca Cancun-All Inclusive se encuentra en Cancún, a 8 km de la estación de autobuses de Cancún y del Palacio de Gobierno de Cancún. El establecimiento alberga un restaurante y un bar.</p>
-            </div>
+                </div>
                 <div>
                 <button type="button" class="btn btn-light btn-reserva">Reservar</button>
             </div>
@@ -57,7 +89,7 @@
                 <div>
                 <h5>Cancun Resort</h5>
                 <p>Está situado en Cancún. El Oh! Cancún. El On The Beach alberga un restaurante y un centro de fitness. El establecimiento alberga un bar y se encuentra a 3,8 km del centro comercial La Isla. </p>
-            </div>
+                </div>
                 <div>
                 <button type="button" class="btn btn-light btn-reserva">Reservar</button>
             </div>
@@ -66,7 +98,7 @@
                 <div>
                 <h5>Alivava</h5>
                 <p>A 8 km de la estación de autobuses de Cancún y del Palacio de Gobierno de Cancún.</p>
-            </div>
+                </div>
                 <div>
                 <button type="button" class="btn btn-light btn-reserva">Reservar</button>
             </div>
@@ -75,20 +107,20 @@
                 <div>
                 <h5>El Sol Sale</h5>
                 <p>A 300 metros de la estación de autobuses de Cancún y del Palacio de Gobierno de Cancún.</p>
-            </div>
+                </div>
                 <div>
                 <button type="button" class="btn btn-light btn-reserva">Reservar</button>
+                </div>
             </div>
-        </div>
             <div class="col-sm-4 card-hotel" d-flex flex-column justify-content-between>
                 <div>
                 <h5>Luma by Cavi</h5>
                 <p>Alberga un restaurante y un centro de fitness. El establecimiento alberga un bar.</p>
-            </div>
+                </div>
                 <div>
                 <button type="button" class="btn btn-light btn-reserva">Reservar</button>
+                </div>
             </div>
-        </div>
         </div>
         <hr />
         <footer class="" footer>
@@ -97,19 +129,19 @@
                     <a href="http://www.Facebook.com">Facebook</a>
                     <a href="http://www.Twitter.com">Twitter</a>
                     <a href="http://www.Instagram.com">Instagram</a>
-            </div>
-            <div class="col-sm-4">
-                <address>
-                    <p>Buenos Aires 930, Nueva Cordoba, Cordoba.</p>
-                    <p>+541269851</p>
-                    <p>contacto@gmail.com.ar</p>
-                </address>
-            </div>
-            <div class="col-sm-4 d-flex flex-column align-items-end">
-                <a href="http://www.Facebook.com">Nosotros</a>
-                <a href="http://www.Twitter.com">Terminos y condiciones</a>
-                <a href="http://www.Instagram.com">Contacto</a>
-            </div>
+                </div>
+                <div class="col-sm-4">
+                    <address>
+                        <p>Buenos Aires 930, Nueva Cordoba, Cordoba.</p>
+                        <p>+541269851</p>
+                        <p>contacto@gmail.com.ar</p>
+                    </address>
+                </div>
+                <div class="col-sm-4 d-flex flex-column align-items-end">
+                    <a href="http://www.Facebook.com">Nosotros</a>
+                    <a href="http://www.Twitter.com">Terminos y condiciones</a>
+                    <a href="http://www.Instagram.com">Contacto</a>
+                </div>
             </div>            
             
         </footer>
