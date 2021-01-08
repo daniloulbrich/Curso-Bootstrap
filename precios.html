@@ -57,71 +57,97 @@
         </nav>                 
     </div>
 
-    <!-- Cuerpo de precios -->
+    <!-- TABS -->
     <div class="container">
-        <h1>Lista de Precios</h1>
-        <hr />
-        <div class="table-responsive">
-            <table class="table table-light table-striped">
-                <thead class="thead-dark">
-                    <th>Calidad</th>
-                    <th>Tulum</th>
-                    <th>Cancun</th>
-                    <th>Carmen</th>
-                    <th>Holbox</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="oi oi-star"></span></td>
-                        <td>$2500</td>
-                        <td>$3000</td>
-                        <td>$4300</td>
-                        <td>$4600</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-                        <td>$4500</td>
-                        <td>$6000</td>
-                        <td>$6600</td>
-                        <td>$5400</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-                        <td>$8300</td>
-                        <td>$9000</td>
-                        <td>$9900</td>
-                        <td>$10200</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-                        <td>$12000</td>
-                        <td>$15600</td>
-                        <td>$17000</td>
-                        <td>$13200</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-                        <td>$20000</td>
-                        <td>$19600</td>
-                        <td>$22000</td>
-                        <td>$33200</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="compara-tab" data-toggle="tab" href="#compara" role="tab" aria-controls="compara" aria-selected="true">Compara Hoteles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
+          </ul>
+    </div>
 
-        <div class="d-flex justify-content-center">
-              <div class="card" style="width: 18rem;">
-                <div class="card-header" style="background-color: black; color: white;">
-                    Tarjetas Aceptadas
+    <!-- Cuerpo de precios -->
+    <div class="container">    
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <h3>Lista de Precios</h3>
+                <hr />
+                <div class="table-responsive">
+                    <table class="table table-light table-striped">
+                        <thead class="thead-dark">
+                            <th>Calidad</th>
+                            <th>Tulum</th>
+                            <th>Cancun</th>
+                            <th>Carmen</th>
+                            <th>Holbox</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="oi oi-star"></span></td>
+                                <td>$2500</td>
+                                <td>$3000</td>
+                                <td>$4300</td>
+                                <td>$4600</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>$4500</td>
+                                <td>$6000</td>
+                                <td>$6600</td>
+                                <td>$5400</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>$8300</td>
+                                <td>$9000</td>
+                                <td>$9900</td>
+                                <td>$10200</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>$12000</td>
+                                <td>$15600</td>
+                                <td>$17000</td>
+                                <td>$13200</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>$20000</td>
+                                <td>$19600</td>
+                                <td>$22000</td>
+                                <td>$33200</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Tarjeta HSBC</li>
-                    <li class="list-group-item">Tarjeta MarsterCard</li>
-                    <li class="list-group-item">Tarjeta Naranja</li>
-                </ul>
             </div>
-        </div>
+
+            <!-- Tarjetas -->
+            <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header" style="background-color: black; color: white;">
+                            Tarjetas Aceptadas
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Tarjeta HSBC</li>
+                            <li class="list-group-item">Tarjeta MarsterCard</li>
+                            <li class="list-group-item">Tarjeta Naranja</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                <h3>Comentarios</h3>
+            </div>
+    </div>
     
         <hr />
         <!-- footer -->
