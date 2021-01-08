@@ -8,9 +8,7 @@
     background-attachment: fixed;
     background-size: cover;
 }
-.btn{
-    background-color:silver;
-}
+
 
 .footer{
     background-color: red;
@@ -27,6 +25,7 @@
 .btn-reserva{
 width: 100%;
 border-radius: 0xp;
+background-color:silver;
 
 }
 

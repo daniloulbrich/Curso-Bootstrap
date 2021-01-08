@@ -55,36 +55,44 @@
               </ol>
         </nav>                 
       </div>
-
+    
       <!-- Cuerpo de informacion -->
     <div class="container">
-        <div class="d-flex flex-wrap">
+        <div class="row">
             <div class="col-sm-4">
-                <h3>¿Como funciona?</h3>
-                <p>Busca los hoteles de acuerdo a tu preferencia.</p>
+                <button class="btn btn-light btn-reserva" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1"><h5>¿Como funciona?</h5></button>
             </div>
             <div class="col-sm-4">
-                <h3>¿Donde puedo reservar?</h3>
-                <p>Elegi la ciudad o playa que te interese y luego realiza la reserva.</p>
+                <button class="btn btn-light btn-reserva" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2"><h5>¿Donde puedo reservar?</h5></button>
             </div>
             <div class="col-sm-4">
-                <h3>¿Como pago?</h3>
-                <p>Utiliza tu tarjeta favorita.</p> 
+                <button class="btn btn-light btn-reserva" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3"><h5>¿Como pago?</h5></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 collapse" id="funciona">
+                <p style="padding-top: 10px;">Busca los hoteles de acuerdo a tu preferencia. Es una plataforma de reservas elegante y fácil de usar que muestra un listado de alojamientos. Comercializa cada hotel en base a las valoraciones de los clientes y otros factores, cómo el precio que el propietario de al alojamiento paca como comisión comercial.</p>
+            </div>
+            <div class="col-sm-4 collapse" id="reserva">
+                <p style="padding-top: 10px;">Elegi la ciudad o playa que te interese y luego realiza la reserva. Las reservas se confirman instantáneamente para los huéspedes cuando finalizan el proceso de reserva. Una vez verificadas por la persona o personas que se alojan, el alojamiento recibirá una confirmación de reserva por correo electrónico.</p>
+            </div>
+            <div class="col-sm-4 collapse" id="pago">
+                <p style="padding-top: 10px;">Los huéspedes pagarán su cuenta mediante tarjetas de credito o a su llegada o salida del alojamiento, dependiendo de la opción que haya elegido el propietario. Los huéspedes pagan la tarifa según lo confirmado por el correo electrónico, que refleja la tarifa mostrada en la web de reservas al huésped en el momento que hizo la reserva.</p> 
             </div>
         </div>
 
-        <h1>Nuestros Hoteles</h1>
+        <h1 style="padding-top: 20px;">Nuestros Hoteles</h1>
         <hr />
     </div>
     
     <!-- Cuerpo de hoteles -->
     <div class="container">
-        <div class="d-flex flex-wrap">
+        <div class="row">
             <div class="col-sm-4 card card-hotel ml-2 justify-content-between">
                 <img src="images/1.jpg" class="card-img-top img" alt="hotel img">
                 <div class="card-body">
                 <h5 class="card-title">Luma by Cavi</h5>
-                <p class="card-text">El Lume by Kavia se encuentra en Cancún, a 300 metros de la estación de autobuses de Cancún y del Palacio de Gobierno de Cancún, posee una gran playa privada. Hermoso lugar</p>
+                <p class="card-text">El Lume by Kavia se encuentra en Cancún, a 300 metros de la estación de autobuses de Cancún y del Palacio de Gobierno de Cancún, posee una gran playa privada. Hermoso lugar.</p>
                 </div>
                 <div>
                 <button type="button" class="btn btn-light btn-reserva"><span class="oi oi-check footer-address-icon" ></span>Reservar</button>
@@ -134,7 +142,7 @@
                 <img src="images/6.jfif" class="card-img-top" alt="hotel img">
                 <div class="card-body">
                 <h5 class="card-title">Lumasa Resort</h5>
-                <p class="card-text">Alberga un restaurante y un centro de fitness. El establecimiento alberga un bar. Playa Paradisiaca.</p>
+                <p class="card-text">Alberga un restaurante y un centro de fitness. El establecimiento alberga un bar.</p>
                 </div>
                 <div>
                 <button type="button" class="btn btn-light btn-reserva"><span class="oi oi-check footer-address-icon" ></span>Reservar</button>
