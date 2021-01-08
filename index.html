@@ -146,7 +146,7 @@
             <div class="col-sm-4 card card-hotel ml-2 justify-content-between">
                 <img src="images/6.jfif" class="card-img-top" alt="hotel img">
                 <div class="card-body">
-                <h5 class="card-title">Lumasa Resort</h5>
+                <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="¡ULTIMOS LUGARES!">Lumasa Resort</h5>
                 <p class="card-text">Alberga un restaurante y un centro de fitness. El establecimiento alberga un bar.</p>
                 </div>
                 <div>
@@ -213,8 +213,15 @@
     
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $("[data-toggle='tooltip']").tooltip();
+            $("[data-toggle='popover']").popover();
+        })
+    </script>
 
 </body>
 </html>
