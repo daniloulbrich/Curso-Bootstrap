@@ -27,6 +27,13 @@
   background-color: #e4e4e4;
   margin-top: 5px; }
 
+.btn-info {
+  width: 100%;
+  border-radius: 0xp;
+  background-color: #3b395e;
+  color: white;
+  margin-top: 5px; }
+
 .footer-address-icon {
   padding-right: 10px; }
 
