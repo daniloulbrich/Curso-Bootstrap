@@ -7,21 +7,159 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+   <title>Guia Hoteles</title>
   </head>
+  
   <body>
-    <h1>Hello, world!</h1>
-    <div class="container">
-        <div class="row">
-
+      <!-- Barra de Navegacion -->
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="precios.html">Precios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pruebas.html">Terminos y Condiciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+          </ul>
         </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1 class="display-4">HOTELES</h1>
     </div>
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <!-- Navegacion -->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>  
+              <li class="breadcrumb-item active" aria-current="page">Terminos y Condiciones</li>      
+              </ol>
+        </nav>                 
+    </div>
+    <!-- Cuerpo de informacion -->
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-4">
+              <button class="btn btn-light btn-contacto" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1"><h5>¿Como funciona?</h5></button>
+          </div>
+          <div class="col-sm-4">
+              <button class="btn btn-light btn-contacto" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2"><h5>¿Donde puedo reservar?</h5></button>
+          </div>
+          <div class="col-sm-4">
+              <button class="btn btn-light btn-contacto" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3"><h5>¿Como pago?</h5></button>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col collapse multi-collapse" id="funciona">
+              <p style="padding-top: 10px;">Busca los hoteles de acuerdo a tu preferencia. Es una plataforma de reservas elegante y fácil de usar que muestra un listado de alojamientos. Comercializa cada hotel en base a las valoraciones de los clientes y otros factores, cómo el precio que el propietario de al alojamiento paca como comisión comercial.</p>
+          </div>
+          <div class="col collapse multi-collapse" id="reserva">
+              <p style="padding-top: 10px;">Elegi la ciudad o playa que te interese y luego realiza la reserva. Las reservas se confirman instantáneamente para los huéspedes cuando finalizan el proceso de reserva. Una vez verificadas por la persona o personas que se alojan, el alojamiento recibirá una confirmación de reserva por correo electrónico.</p>
+          </div>
+          <div class="col collapse multi-collapse" id="pago">
+              <p style="padding-top: 10px;">Los huéspedes pagarán su cuenta mediante tarjetas de credito o a su llegada o salida del alojamiento, dependiendo de la opción que haya elegido el propietario. Los huéspedes pagan la tarifa según lo confirmado por el correo electrónico, que refleja la tarifa mostrada en la web de reservas al huésped en el momento que hizo la reserva.</p> 
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row" style="display:flex;">
+        <div class="col card card-hotel ml-2">
+          <img src="images/1.jpg" class="card-img-top img" alt="hotel img">
+          <div class="card-body">
+          <h5 class="card-title">Luma by Cavi</h5>
+          <p class="card-text">El Lume by Kavia, se encuentra a 300 metros del Palacio de Gobierno de Cancún, posee una gran playa privada con pileta climatizada. Hermoso lugar.</p>
+          </div>
+          <div>
+              <button type="button" class="btn btn-success btn-reserva"><span class="oi oi-check footer-address-icon" ></span>Reservar</button>
+              <button type="button" class="btn btn-light btn-contacto" data-toggle="modal" data-target="#contacto"><span class="oi oi-info footer-address-icon" ></span>Contacto</button>
+          </div>
+        </div>
+        <div class="col card card-hotel ml-2" >
+          <img src="images/2.jpg" class="card-img-top" alt="hotel img">
+          <div class="card-body">
+          <h5 class="card-title">Garza Blanca All-Inclusive</h5>
+          <p class="card-text">El Garza Blanca Cancun-All Inclusive se encuentra en Cancún, a 8 km de la estación de autobuses de Cancún y del Palacio de Gobierno de Cancún. El establecimiento alberga un restaurante y un bar.</p>
+          </div>
+          <div>
+              <button type="button" class="btn btn-success btn-reserva"><span class="oi oi-check footer-address-icon" ></span>Reservar</button>
+              <button type="button" class="btn btn-light btn-contacto" data-toggle="modal" data-target="#contacto"><span class="oi oi-info footer-address-icon" ></span>Contacto</button>
+          </div>
+      </div>
+      <div class="col card card-hotel ml-2">
+        <img src="images/3.jpg" class="card-img-top" alt="hotel img">
+        <div class="card-body">
+        <h5 class="card-title">Cancun Resort <span class="badge badge-success">SALE</span></h5>
+        <p class="card-text">Está situado en Cancún. El Oh! Cancún. El On The Beach alberga un restaurante y un centro de fitness. El establecimiento alberga un bar y se encuentra a 3,8 km del centro comercial La Isla. </p>
+        </div>
+        <div>
+        <button type="button" class="btn btn-success btn-reserva"><span class="oi oi-check footer-address-icon" ></span>Reservar</button>
+        <button type="button" class="btn btn-light btn-contacto" data-toggle="modal" data-target="#contacto"><span class="oi oi-info footer-address-icon" ></span>Contacto</button>      
+    </div>
+    </div>
+    <div class="col card card-hotel ml-2 justify-content-between">
+      <img src="images/4.jpg" class="card-img-top" alt="hotel img">
+      <div class="card-body">
+      <h5 class="card-title">Alivava</h5>
+      <p class="card-text">A 8 km de la estación de autobuses de Cancún y del Palacio de Gobierno de Cancún.</p>
+      </div>
+      <div>
+          <button type="button" class="btn btn-success btn-reserva"><span class="oi oi-check footer-address-icon" ></span>Reservar</button>
+          <button type="button" class="btn btn-light btn-contacto" data-toggle="modal" data-target="#contacto"><span class="oi oi-info footer-address-icon" ></span>Contacto</button>
+      </div>
+  </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+      <footer class="" footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="http://www.Facebook.com">Facebook</a>
+                <a href="http://www.Twitter.com">Twitter</a>
+                <a href="http://www.Instagram.com">Instagram</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <p><span class="oi oi-home footer-address-icon"></span>Buenos Aires 930, Nueva Cordoba, Cordoba.</p>
+                    <p><span class="oi oi-phone footer-address-icon"></span>+541269851</p>
+                    <p><span class="oi oi-inbox footer-address-icon"></span>contacto@gmail.com.ar</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="http://www.Facebook.com"> Nosotros</a>
+                <a href="http://www.Twitter.com">Terminos y condiciones</a>
+                <a href="http://www.Instagram.com">Contacto</a>
+            </div>
+        </div>            
+    </footer>
+
+    </DIv>
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+   
   </body>
 </html>
