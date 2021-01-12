@@ -1,0 +1,45 @@
+.jumbotron {
+  color: #3b395e;
+  margin-top: px;
+  background-image: url(../images/jumbotom1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.footer {
+  background-color: red; }
+
+.card-hotel {
+  flex: 1 300px;
+  padding: 2px 5px 2px 5px;
+  height: 100%;
+  margin-top: 10px; }
+
+.btn-reserva {
+  width: 100%;
+  border-radius: 0xp;
+  color: black; }
+
+.btn-contacto {
+  width: 100%;
+  border-radius: 0xp;
+  background-color: #e4e4e4;
+  margin-top: 5px; }
+
+.footer-address-icon {
+  padding-right: 10px; }
+
+img {
+  width: 300px;
+  height: 300px; }
+
+body {
+  background-image: url(images/fondo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.tab-content {
+  padding-top: 15px; }
