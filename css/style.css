@@ -1,5 +1,5 @@
 .jumbotron {
-  color: #3b395e;
+  color: #343a40;
   margin-top: px;
   background-image: url(../images/jumbotom1.jpg);
   background-position: center center;
@@ -8,7 +8,7 @@
   background-size: cover; }
 
 .footer {
-  background-color: red; }
+  background-color: #ffffff; }
 
 .card-hotel {
   flex: 1 300px;
@@ -19,7 +19,7 @@
 .btn-reserva {
   width: 100%;
   border-radius: 0xp;
-  color: black; }
+  color: #ffffff; }
 
 .btn-contacto {
   width: 100%;
@@ -30,8 +30,8 @@
 .btn-info {
   width: 100%;
   border-radius: 0xp;
-  background-color: #3b395e;
-  color: white;
+  background-color: #343a40;
+  color: #ffffff;
   margin-top: 5px; }
 
 .footer-address-icon {
